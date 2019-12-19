@@ -22,7 +22,7 @@ flask run
 
 ### Frontend
 
-Run frontend using these commnad at the frontend directory
+Run frontend using these commnads at the frontend directory
 ```bash
 npm install
 npm start
