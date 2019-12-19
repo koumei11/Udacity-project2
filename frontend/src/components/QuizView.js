@@ -131,6 +131,7 @@ class QuizView extends Component {
   }
 
   evaluateAnswer = () => {
+    
     const formatGuess = this.state.guess.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase()
     const answerArray = this.state.currentQuestion.answer.toLowerCase().split(' ');
     return answerArray.includes(formatGuess)
@@ -148,7 +149,6 @@ class QuizView extends Component {
       </div>
     )
   }
-
   renderPlay(){
     return this.state.previousQuestions.length === questionsPerPlay || this.state.forceEnd
       ? this.renderFinalScore()
